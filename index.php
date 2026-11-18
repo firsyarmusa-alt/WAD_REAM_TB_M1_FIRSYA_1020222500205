@@ -76,7 +76,7 @@ $pesan  = $_GET['pesan'] ?? '';
                             <a href="detail.php?id=<?= $row['id_pembicara'] ?>" class="btn-link">Detail</a> |
                             <a href="edit.php?id=<?= $row['id_pembicara'] ?>" class="btn-link">Edit</a> |
                             <form action="hapus.php" method="POST" style="display:inline"
-                                  onsubmit="return confirm('Yakin hapus data ini?')">
+                                onsubmit="return confirm('Yakin hapus data ini?')">
                                 <input type="hidden" name="id" value="<?= $row['id_pembicara'] ?>">
                                 <button type="submit" style="padding:4px 10px;background:#dc2626;">Hapus</button>
                             </form>
